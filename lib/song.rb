@@ -40,6 +40,12 @@ class Song
       name = data[0]
       age = data[1]
       company = data[2]
+      song = self.new
+      song.name = name
+      song.age = age
+      song.company = company
+    end
+  return people
   end
 
   def self.create_from_filename
