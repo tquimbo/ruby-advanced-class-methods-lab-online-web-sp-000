@@ -56,7 +56,7 @@ class Song
   end
 
   def self.destory_all
-    self.clear
+    self.all.clear
   end
 
 end
