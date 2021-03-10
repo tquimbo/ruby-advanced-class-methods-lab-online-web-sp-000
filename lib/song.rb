@@ -38,7 +38,7 @@ class Song
     name = artist_name.collect do |row|
     data = row.split(".")
     artist_name = data[0]
-    song = data[1]
+    name = data[1]
     mp3 = data[2]
     song = self.new
     song.artist_name = artist_name
