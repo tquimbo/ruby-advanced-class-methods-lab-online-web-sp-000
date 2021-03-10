@@ -44,13 +44,8 @@ class Song
   end
 
   def self.create_from_filename(name)
-    data = name.split(" - ")
-    artist_name = data[0]
-    name = data[1].delete_suffix('.mp3')
-    song = self.new
-    song.artist_name = artist_name
-    song.save
-    return song.save
+    self.new_from_filename.save
+  
   end
 
   def self.all
