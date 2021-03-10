@@ -42,15 +42,15 @@ class Song
   end
 
   def self.all
-  @@all
+    @@all
   end
 
   def self.destory_all
-  self.all.clear
+    self.all.clear
   end
 
   def save
-  self.class.all << self
+    self.class.all << self
   end
 
 end
