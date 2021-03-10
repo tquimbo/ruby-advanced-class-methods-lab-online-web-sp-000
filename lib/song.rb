@@ -42,7 +42,7 @@ class Song
     mp3 = data[2]
     song = self.new
     song.artist_name = artist_name
-    song.song = song
+    song.name = song
     song.mp3 = mp3
     end
     return song
