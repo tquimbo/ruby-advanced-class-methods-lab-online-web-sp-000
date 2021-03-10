@@ -29,7 +29,7 @@ class Song
   self.find_by_name(name) || self.create_by_name(name)
   end
 
-  def self.alphabetical(name)
+  def self.alphabetical
     self.sort { |a, b| a <=> b }
   end
 
