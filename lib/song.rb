@@ -37,13 +37,13 @@ class Song
     artist = name.split("-")
     song = artist.collect do |row|
     data = row.split(".")
-    name = data[0]
-    age = data[1]
-    company = data[2]
+    artist = data[0]
+    song = data[1]
+    mp3 = data[2]
     song = self.new
-    song.name = name
-    song.age = age
-    song.company = company
+    song.artist = artist
+    song.song = song
+    song.mp3 = mp3
     end
     return song
   end
