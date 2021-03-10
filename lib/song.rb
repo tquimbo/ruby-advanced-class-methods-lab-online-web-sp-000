@@ -52,7 +52,7 @@ class Song
   end
 
   def self.destory_all
-    self.class.all.clear
+    @@all.clear
   end
 
   def save
