@@ -41,7 +41,7 @@ class Song
     song = data[1]
     mp3 = data[2]
     song = self.new
-    song.artist = artist
+    song.artist_name = artist_name
     song.song = song
     song.mp3 = mp3
     end
