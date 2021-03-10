@@ -36,14 +36,14 @@ class Song
   def self.new_from_filename
     rows = csv_data.split("\n")
     people = rows.collect do |row|
-      data = row.split(", ")
-      name = data[0]
-      age = data[1]
-      company = data[2]
-      song = self.new
-      song.name = name
-      song.age = age
-      song.company = company
+    data = row.split(", ")
+    name = data[0]
+    age = data[1]
+    company = data[2]
+    song = self.new
+    song.name = name
+    song.age = age
+    song.company = company
     end
   return song
   end
