@@ -40,7 +40,7 @@ class Song
     artist_name = data[0]
     name = data[1]
     # mp3 = data[2]
-    song = self.new
+    self.new = song
     song.artist_name = artist_name
     song.name = song
     # song.mp3 = mp3
