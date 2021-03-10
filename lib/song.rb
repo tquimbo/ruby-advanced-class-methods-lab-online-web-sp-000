@@ -33,10 +33,10 @@ class Song
     self.all.sort_by {|song| song.name}
   end
 
-  def self.new_from_filename
-    rows = csv_data.split("-")
-    people = rows.collect do |row|
-    data = row.split(", ")
+  def self.new_from_filename(name)
+    artist = name.split("-")
+    song = artist.collect do |row|
+    data = row.split(".mp3")
     name = data[0]
     age = data[1]
     company = data[2]
