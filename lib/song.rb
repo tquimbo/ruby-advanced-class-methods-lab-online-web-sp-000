@@ -50,6 +50,7 @@ class Song
     song = self.new
     song.artist_name = artist_name
     song.save
+    return song.save
   end
 
   def self.all
