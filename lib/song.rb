@@ -36,7 +36,7 @@ class Song
   def self.new_from_filename(name)
     data = name.split(" - ")
     artist_name = data[0]
-    name = data[1].delete("/.mp3/")
+    name = data[1].delete("[[/.mp3/]")
 
     song = self.new
     song.artist_name = artist_name
