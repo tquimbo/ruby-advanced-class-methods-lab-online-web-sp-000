@@ -28,7 +28,8 @@ class Song
   def self.find_or_create_by_name(name)
   self.find_by_name
   self.create_by_name
-
+  if self.find_by_name == name
+    return name
   end
 
   def self.alphabetical
@@ -36,7 +37,7 @@ class Song
   end
 
   def self.new_from_filename
-
+  
   end
 
   def self.create_from_filename
