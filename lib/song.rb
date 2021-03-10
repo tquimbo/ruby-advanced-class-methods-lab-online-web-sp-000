@@ -55,12 +55,12 @@ class Song
     self.class.all << self
   end
 
-  def self.destory_all
-    self.all.clear
-  end
-
-  # def self.destroy_all
+  # def self.destory_all
   #   self.all.clear
   # end
+
+  def self.destroy_all
+    self.all.clear
+  end
 
 end
