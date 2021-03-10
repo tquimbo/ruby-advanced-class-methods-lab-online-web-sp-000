@@ -33,10 +33,8 @@ class Song
     self.all.sort_by {|song| song.name}
   end
 
-  def self.new_from_filename(name)
+  def self.new_from_filename
     data = name.split(" - ")
-    # all = artist_name.collect do |row|
-    # data = row.split("-")
     artist_name = data[0]
     name = data[1]
 
