@@ -39,11 +39,11 @@ class Song
     data = row.split(".")
     artist_name = data[0]
     name = data[1]
-    mp3 = data[2]
+    # mp3 = data[2]
     song = self.new
     song.artist_name = artist_name
     song.name = song
-    song.mp3 = mp3
+    # song.mp3 = mp3
     end
     return song
   end
