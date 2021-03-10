@@ -22,7 +22,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    self.all.find{|person| person.name == name}
+    self.all.find{|song| song.name == name}
   end
 
   def self.find_or_create_by_name(name)
@@ -32,7 +32,7 @@ class Song
   end
 
   def self.alphabetical
-
+  self.sort_by{|song| a} 
   end
 
   def self.new_from_filename
