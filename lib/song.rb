@@ -30,7 +30,7 @@ class Song
   end
 
   def self.alphabetical
-    @ALL { |a, b| a <=> b }
+    @@all.sort{ |a, b| a <=> b }
   end
 
   def self.new_from_filename
