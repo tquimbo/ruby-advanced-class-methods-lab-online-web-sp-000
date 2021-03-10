@@ -45,7 +45,7 @@ class Song
       song.age = age
       song.company = company
     end
-  return people
+  return song
   end
 
   def self.create_from_filename
