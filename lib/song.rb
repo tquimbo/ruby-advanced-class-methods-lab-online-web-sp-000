@@ -34,7 +34,9 @@ class Song
   end
 
   def self.new_from_filename
-
+    song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
+    song.name #=> "Blank Space"
+    song.artist_name #=> "Taylor Swift"
   end
 
   def self.create_from_filename
